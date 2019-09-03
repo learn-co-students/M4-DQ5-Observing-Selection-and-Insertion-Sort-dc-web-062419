@@ -1,4 +1,9 @@
 function insertionSort(arr) {
-  // your code here!
-  // arr is an array of unsorted integers (i.e. [3, 5, 1])
+  for (let i = 0; i < arr.length; i++) {
+    const current = arr[i];
+    const pos = arr.findIndex(el => el > current);
+    arr.splice(i, 1);
+    arr.splice(pos, 0, current);
+  }
+  return arr;
 }
