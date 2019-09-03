@@ -5,12 +5,12 @@ const config = {
   animationDuration: 80, // ms
   sorts: [
     {
-      id: "selection",
-      func: selectionSort
+      id: 'selection',
+      func: selectionSort,
     },
     {
-      id: "insertion",
-      func: insertionSort
+      id: 'insertion',
+      func: insertionSort,
     },
-  ]
-}
+  ],
+};
